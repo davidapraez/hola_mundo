@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conectar con base datos</title>
+    <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+    <label >Cedula</label>
+    <input id="id" type="number" min="0">
+    <label >Nombre</label>
+    <input id ="nombre" type="text" min="0">
+    <label for="">Contraseña</label>
+    <input id = "password" type="password" name="" id="">
+    <input onclick="funcion()" class="btn-1" type="submit" value="Guardar">
+    <input class="btn-2" type="reset" value="Limpiar">
+    <input class="btn-3" type="reset" value="Eliminar">
+    
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyDQyQwPv0jLMi60BjDhSi37gDPEMQIsv3E",
+          authDomain: "prueba-c70ef.firebaseapp.com",
+          projectId: "prueba-c70ef",
+          storageBucket: "prueba-c70ef.appspot.com",
+          messagingSenderId: "626664101781",
+          appId: "1:626664101781:web:51d85f542ae102afc7c89c"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+      </script>
+    
+</body>
+
+</html>
